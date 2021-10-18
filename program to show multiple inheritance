@@ -1,0 +1,18 @@
+class test {
+    void eat(){
+        System.out.println("pizza");
+    }
+}
+class car extends test {
+    void drink(){
+        System.out.println("burger");
+    }
+}
+class bike{
+    public static void main(String[] args){
+        car d=new car ();
+        d.drink();
+        d.eat();
+
+    }
+}
