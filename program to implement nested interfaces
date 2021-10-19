@@ -1,0 +1,21 @@
+interface tyres {
+   void move();
+}
+interface seats {
+   void sit();
+}
+class car implements tyres, seats {
+   public void move() {
+      System.out.println("tyres will move");
+   }
+   public void sit() {
+      System.out.println("seats wont move");
+   }
+}
+public class ex {
+   public static void main(String args[]) {
+      car a = new car();
+      a.move();
+      a.sit();
+   }
+}
